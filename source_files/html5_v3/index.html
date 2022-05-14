@@ -1,127 +1,219 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html>
-<head>
-<meta charset=utf-8>
-<title>Killersites CSS layout Example</title>
-<link href="css/style.css" rel="stylesheet" type="text/css">
-<link href="css/slideshow.css" rel="stylesheet" type="text/css">
-<script src="http://cdn.jquerytools.org/1.2.5/full/jquery.tools.min.js"></script>
+  <head>
+    <meta charset="utf-8" />
+    <title>Killersites CSS layout Example</title>
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+    <link href="css/slideshow.css" rel="stylesheet" type="text/css" />
+    <script src="http://cdn.jquerytools.org/1.2.5/full/jquery.tools.min.js"></script>
 
-<!--[if lt IE 9]>
-<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-<![endif]-->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
 
-<!-- enable th jQuerry -->
-<script language="javascript">
-// What is $(document).ready ? See: http://flowplayer.org/tools/documentation/basics.html#document_ready
-$(function() {
-	
-$(".slidetabs").tabs(".images > div", {
-	 //enable the "crass-fading" effect
-	 effect:'fade',
-	 fadeOutSpeed: "slow",
-	 
-	 // start from the befinning after the last tab
-	 rotate: true
-//use the slideshow plugin. It accepts its own configuration 
-}).slideshow();
-});
-</script>
-</head>
-<body>
-<content>
+    <!-- enable the jQuerry -->
+    <script language="javascript">
+      // What is $(document).ready ? See: http://flowplayer.org/tools/documentation/basics.html#document_ready
+      $(function () {
+        $(".slidetabs")
+          .tabs(".images > div", {
+            //enable the "cross-fading" effect
+            effect: "fade",
+            fadeOutSpeed: "slow",
 
-	<header>
-    <a href="#" id="logo">Home</a>
-    <h1>Killersites Training</h1>
-    <p>Creating Killersites Since 1998</p>
-    </header>
-    
-    <!-- container for the slides -->
-    <header class="images">
-    <!-- first slide -->
-    <div>
-    <img src="images/killerfrog.jpg" width="940" height="250" alt="image1">
-    </div>
-    <!-- second slide -->
-    <div>
-    <img src="images/killerfrog2.jpg" width="940" height="250" alt="image2">
-    </div>
-    <!-- third slide -->
-    <div>
-    <img src="images/killerfrog3.jpg" width="940" height="250" alt="image3">
-    </div>
-    </header>
-    <!-- the tabs -->
-    <div class="slidetabs">
-    <a href="#"></a>
-    <a href="#"></a>
-    <a href="#"></a>
-    </div>
-    
-    <nav>
-   	<ul>
-		<li><a href="#">Home</a></li>
-		<li><a href="overlay.html">Overlay</a></li>
-		<li><a href="#">News</a></li>
-		<li><a href="#">Products</a></li>
-		<li><a href="#">Services</a></li>
-		<li><a href="#">Clients</a></li>
-		<li><a href="#">Employment</a></li>
-        <li><a href="#">Contact</a></li>
-	</ul>
-    </nav>
-    
-    <article>
-    <h2>Lorem ipsum</h2> 
-    <p>dolor sit amet consectetur adipiscing elit. Nulla id nulla risus, vitae consequat dui. Quisque vehicula tellus sed nisl feugiat adipiscing ut in neque. Nullam id sapien eget diam ullamcorper tempus a pharetra enim. Nam at ligula ligula. Maecenas turpis nunc, suscipit et viverra in, cursus eget tortor. Aenean mollis adipiscing est. Cras elementum blandit tincidunt. Aliquam at semper lacus. Etiam hendrerit lacinia mauris, vel fermentum risus venenatis ultrices. Aenean fringilla est interdum metus tempor facilisis ultrices a metus. Sed sit amet tortor sit amet nulla molestie vestibulum. Praesent id sem a libero fermentum volutpat. Maecenas pharetra neque eu leo interdum hendrerit. Morbi diam ipsum, gravida sed scelerisque quis, imperdiet vitae quam. Donec sollicitudin, nunc sit amet convallis sagittis, libero ipsum sollicitudin elit, ac vestibulum ante turpis faucibus tellus. Integer molestie turpis id est ultricies vel commodo magna viverra. Nunc gravida fermentum placerat. Duis lorem augue, tincidunt blandit vehicula quis, aliquam nec tellus.</p>
-    <h3>A Sub Headline</h3> 
-    <p>dolor sit amet consectetur adipiscing elit. Nulla id nulla risus, vitae consequat dui. Quisque vehicula tellus sed nisl feugiat adipiscing ut in neque. Nullam id sapien eget diam ullamcorper tempus a pharetra enim. Nam at ligula ligula. Maecenas turpis nunc, suscipit et viverra in, cursus eget tortor. Aenean mollis adipiscing est. Cras elementum blandit tincidunt. Aliquam at semper lacus. Etiam hendrerit lacinia mauris, vel fermentum risus venenatis ultrices. </p>
-    <h3>Another Sub Headline</h3> 
-    <p>dolor sit amet consectetur adipiscing elit. Nulla id nulla risus, vitae consequat dui. Quisque vehicula tellus sed nisl feugiat adipiscing ut in neque. Nullam id sapien eget diam ullamcorper tempus a pharetra enim. Nam at ligula ligula. Maecenas turpis nunc, suscipit et viverra in, cursus eget tortor. Aenean mollis adipiscing est. Cras elementum blandit tincidunt. Aliquam at semper lacus. Etiam hendrerit lacinia mauris, vel fermentum risus venenatis ultrices.Sed sit amet tortor sit amet nulla molestie vestibulum. Praesent id sem a libero fermentum volutpat. Maecenas pharetra neque eu leo interdum hendrerit. Morbi diam ipsum, gravida sed scelerisque quis, imperdiet vitae quam. Donec sollicitudin, nunc sit amet convallis sagittis, libero ipsum sollicitudin elit, ac vestibulum ante turpis faucibus tellus. Integer molestie turpis id est ultricies vel commodo magna viverra. Nunc gravida fermentum placerat. Duis lorem augue, tincidunt blandit vehicula quis, aliquam nec tellus. </p>
-    
-    <section class="leftfloat">
-    <h3>nested left section</h3>
-    <p>Morbi diam ipsum, gravida sed scelerisque quis, imperdiet vitae quam. Donec sollicitudin, nunc sit amet convallis sagittis, libero ipsum sollicitudin elit, ac vestibulum ante turpis faucibus tellus. Integer molestie turpis id est ultricies vel commodo magna viverra. Nunc gravida fermentum placerat. Duis lorem augue, tincidunt blandit vehicula quis, aliquam nec tellus.</p>
-    </section>
-    
-    <section class="rightfloat">
-    <h3>nested right section</h3>
-    <p>Morbi diam ipsum, gravida sed scelerisque quis, imperdiet vitae quam. Donec sollicitudin, nunc sit amet convallis sagittis, libero ipsum sollicitudin elit, ac vestibulum ante turpis faucibus tellus. Integer molestie turpis id est ultricies vel commodo magna viverra. Nunc gravida fermentum placerat. Duis lorem augue, tincidunt blandit vehicula quis, aliquam nec tellus.</p>
-    </section>
-    
-	<h3>Another Sub Headline</h3> 
-    <p>dolor sit amet consectetur adipiscing elit. Nulla id nulla risus, vitae consequat dui. Quisque vehicula tellus sed nisl feugiat adipiscing ut in neque. Nullam id sapien eget diam ullamcorper tempus a pharetra enim. Nam at ligula ligula. Maecenas turpis nunc, suscipit et viverra in, cursus eget tortor. Aenean mollis adipiscing est. Cras elementum blandit tincidunt. Aliquam at semper lacus. Etiam hendrerit lacinia mauris, vel fermentum risus venenatis ultrices.Sed sit amet tortor sit amet nulla molestie vestibulum. Praesent id sem a libero fermentum volutpat. Maecenas pharetra neque eu leo interdum hendrerit. Morbi diam ipsum, gravida sed scelerisque quis, imperdiet vitae quam. Donec sollicitudin, nunc sit amet convallis sagittis, libero ipsum sollicitudin elit, ac vestibulum ante turpis faucibus tellus. Integer molestie turpis id est ultricies vel commodo magna viverra. Nunc gravida fermentum placerat. Duis lorem augue, tincidunt blandit vehicula quis, aliquam nec tellus. </p>
+            // start from the befinning after the last tab
+            rotate: true,
+            //use the slideshow plugin. It accepts its own configuration
+          })
+          .slideshow();
+      });
+    </script>
+  </head>
+  <body>
+    <content>
+      <header>
+        <a href="#" id="logo">Home</a>
+        <h1>Killersites Training</h1>
+        <p>Creating Killersites Since 1998</p>
+      </header>
 
-    </article>
-    
-    
-    
-	<footer>
-    
-    <section class="first">
-    <p>&copy;2011 killersites Corp</p>
-    </section>
-    
-    <section>
-    <h3>nested footer section</h3>
-    <p>Morbi diam ipsum, gravida sed scelerisque quis, imperdiet vitae quam. Donec sollicitudin, nunc sit amet convallis sagittis, libero ipsum sollicitudin elit, ac vestibulum ante turpis faucibus tellus.</p>
-    </section> 
-                
-    <section>
-    <h3>nested footer section</h3>
-    <p>Morbi diam ipsum, gravida sed scelerisque quis, imperdiet vitae quam. Donec sollicitudin, nunc sit amet convallis sagittis, libero ipsum sollicitudin elit, ac vestibulum ante turpis faucibus tellus.</p>
-    </section>
-       
-    <section>
-    <h3>nested footer section</h3>
-    <p>Morbi diam ipsum, gravida sed scelerisque quis, imperdiet vitae quam. Donec sollicitudin, nunc sit amet convallis sagittis, libero ipsum sollicitudin elit, ac vestibulum ante turpis faucibus tellus.</p>
-    </section>  
-        
-       <br class="clearing">        
-    </footer>
+      <!-- container for the slides -->
+      <header class="images">
+        <!-- first slide -->
+        <div>
+          <img
+            src="images/killerfrog.jpg"
+            width="940"
+            height="250"
+            alt="image1"
+          />
+        </div>
+        <!-- second slide -->
+        <div>
+          <img
+            src="images/killerfrog2.jpg"
+            width="940"
+            height="250"
+            alt="image2"
+          />
+        </div>
+        <!-- third slide -->
+        <div>
+          <img
+            src="images/killerfrog3.jpg"
+            width="940"
+            height="250"
+            alt="image3"
+          />
+        </div>
+      </header>
+      <!-- the tabs -->
+      <div class="slidetabs">
+        <a href="#"></a>
+        <a href="#"></a>
+        <a href="#"></a>
+      </div>
 
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="overlay.html">Overlay</a></li>
+          <li><a href="#">News</a></li>
+          <li><a href="#">Products</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Clients</a></li>
+          <li><a href="#">Employment</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
 
-</content>
-</body>
+      <article>
+        <h2>Lorem ipsum</h2>
+        <p>
+          dolor sit amet consectetur adipiscing elit. Nulla id nulla risus,
+          vitae consequat dui. Quisque vehicula tellus sed nisl feugiat
+          adipiscing ut in neque. Nullam id sapien eget diam ullamcorper tempus
+          a pharetra enim. Nam at ligula ligula. Maecenas turpis nunc, suscipit
+          et viverra in, cursus eget tortor. Aenean mollis adipiscing est. Cras
+          elementum blandit tincidunt. Aliquam at semper lacus. Etiam hendrerit
+          lacinia mauris, vel fermentum risus venenatis ultrices. Aenean
+          fringilla est interdum metus tempor facilisis ultrices a metus. Sed
+          sit amet tortor sit amet nulla molestie vestibulum. Praesent id sem a
+          libero fermentum volutpat. Maecenas pharetra neque eu leo interdum
+          hendrerit. Morbi diam ipsum, gravida sed scelerisque quis, imperdiet
+          vitae quam. Donec sollicitudin, nunc sit amet convallis sagittis,
+          libero ipsum sollicitudin elit, ac vestibulum ante turpis faucibus
+          tellus. Integer molestie turpis id est ultricies vel commodo magna
+          viverra. Nunc gravida fermentum placerat. Duis lorem augue, tincidunt
+          blandit vehicula quis, aliquam nec tellus.
+        </p>
+        <h3>A Sub Headline</h3>
+        <p>
+          dolor sit amet consectetur adipiscing elit. Nulla id nulla risus,
+          vitae consequat dui. Quisque vehicula tellus sed nisl feugiat
+          adipiscing ut in neque. Nullam id sapien eget diam ullamcorper tempus
+          a pharetra enim. Nam at ligula ligula. Maecenas turpis nunc, suscipit
+          et viverra in, cursus eget tortor. Aenean mollis adipiscing est. Cras
+          elementum blandit tincidunt. Aliquam at semper lacus. Etiam hendrerit
+          lacinia mauris, vel fermentum risus venenatis ultrices.
+        </p>
+        <h3>Another Sub Headline</h3>
+        <p>
+          dolor sit amet consectetur adipiscing elit. Nulla id nulla risus,
+          vitae consequat dui. Quisque vehicula tellus sed nisl feugiat
+          adipiscing ut in neque. Nullam id sapien eget diam ullamcorper tempus
+          a pharetra enim. Nam at ligula ligula. Maecenas turpis nunc, suscipit
+          et viverra in, cursus eget tortor. Aenean mollis adipiscing est. Cras
+          elementum blandit tincidunt. Aliquam at semper lacus. Etiam hendrerit
+          lacinia mauris, vel fermentum risus venenatis ultrices.Sed sit amet
+          tortor sit amet nulla molestie vestibulum. Praesent id sem a libero
+          fermentum volutpat. Maecenas pharetra neque eu leo interdum hendrerit.
+          Morbi diam ipsum, gravida sed scelerisque quis, imperdiet vitae quam.
+          Donec sollicitudin, nunc sit amet convallis sagittis, libero ipsum
+          sollicitudin elit, ac vestibulum ante turpis faucibus tellus. Integer
+          molestie turpis id est ultricies vel commodo magna viverra. Nunc
+          gravida fermentum placerat. Duis lorem augue, tincidunt blandit
+          vehicula quis, aliquam nec tellus.
+        </p>
+
+        <section class="leftfloat">
+          <h3>nested left section</h3>
+          <p>
+            Morbi diam ipsum, gravida sed scelerisque quis, imperdiet vitae
+            quam. Donec sollicitudin, nunc sit amet convallis sagittis, libero
+            ipsum sollicitudin elit, ac vestibulum ante turpis faucibus tellus.
+            Integer molestie turpis id est ultricies vel commodo magna viverra.
+            Nunc gravida fermentum placerat. Duis lorem augue, tincidunt blandit
+            vehicula quis, aliquam nec tellus.
+          </p>
+        </section>
+
+        <section class="rightfloat">
+          <h3>nested right section</h3>
+          <p>
+            Morbi diam ipsum, gravida sed scelerisque quis, imperdiet vitae
+            quam. Donec sollicitudin, nunc sit amet convallis sagittis, libero
+            ipsum sollicitudin elit, ac vestibulum ante turpis faucibus tellus.
+            Integer molestie turpis id est ultricies vel commodo magna viverra.
+            Nunc gravida fermentum placerat. Duis lorem augue, tincidunt blandit
+            vehicula quis, aliquam nec tellus.
+          </p>
+        </section>
+
+        <h3>Another Sub Headline</h3>
+        <p>
+          dolor sit amet consectetur adipiscing elit. Nulla id nulla risus,
+          vitae consequat dui. Quisque vehicula tellus sed nisl feugiat
+          adipiscing ut in neque. Nullam id sapien eget diam ullamcorper tempus
+          a pharetra enim. Nam at ligula ligula. Maecenas turpis nunc, suscipit
+          et viverra in, cursus eget tortor. Aenean mollis adipiscing est. Cras
+          elementum blandit tincidunt. Aliquam at semper lacus. Etiam hendrerit
+          lacinia mauris, vel fermentum risus venenatis ultrices.Sed sit amet
+          tortor sit amet nulla molestie vestibulum. Praesent id sem a libero
+          fermentum volutpat. Maecenas pharetra neque eu leo interdum hendrerit.
+          Morbi diam ipsum, gravida sed scelerisque quis, imperdiet vitae quam.
+          Donec sollicitudin, nunc sit amet convallis sagittis, libero ipsum
+          sollicitudin elit, ac vestibulum ante turpis faucibus tellus. Integer
+          molestie turpis id est ultricies vel commodo magna viverra. Nunc
+          gravida fermentum placerat. Duis lorem augue, tincidunt blandit
+          vehicula quis, aliquam nec tellus.
+        </p>
+      </article>
+
+      <footer>
+        <section class="first">
+          <p>&copy;2011 killersites Corp</p>
+        </section>
+
+        <section>
+          <h3>nested footer section</h3>
+          <p>
+            Morbi diam ipsum, gravida sed scelerisque quis, imperdiet vitae
+            quam. Donec sollicitudin, nunc sit amet convallis sagittis, libero
+            ipsum sollicitudin elit, ac vestibulum ante turpis faucibus tellus.
+          </p>
+        </section>
+
+        <section>
+          <h3>nested footer section</h3>
+          <p>
+            Morbi diam ipsum, gravida sed scelerisque quis, imperdiet vitae
+            quam. Donec sollicitudin, nunc sit amet convallis sagittis, libero
+            ipsum sollicitudin elit, ac vestibulum ante turpis faucibus tellus.
+          </p>
+        </section>
+
+        <section>
+          <h3>nested footer section</h3>
+          <p>
+            Morbi diam ipsum, gravida sed scelerisque quis, imperdiet vitae
+            quam. Donec sollicitudin, nunc sit amet convallis sagittis, libero
+            ipsum sollicitudin elit, ac vestibulum ante turpis faucibus tellus.
+          </p>
+        </section>
+
+        <br class="clearing" />
+      </footer>
+    </content>
+  </body>
 </html>

@@ -1,0 +1,1 @@
+A website created to showcase some of the features of jquery. Created in steps trough a class with a killersites instructor.Defined header, footer, nested sections and a sidebar to navigate the website.
